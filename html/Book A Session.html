@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quintero Photography Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="nav_links">
+                <a href="index.html" target="_self">Home</a>
+                <a href="About Me.html" target="_self">About Me</a>
+                <a href="Packages.html" target="_self">Packages</a>
+                <a href="Book A Session.html" target="_self">Book A Session</a>
+            </div>
+            <div class="hamburger">
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>    
+    </header>
+
+    <main>
+    <div class="main">
+        <div class="packages_intro">
+        </div>
+        <div class="booking_intro">
+            <div class="booking_intro_text">
+                <p class="item-1">Feeling good about this?.. I am!</p>
+                <p class="item-2">This is a form to help me learn all about you two and what you desire out of all this. <br>I respect privacy, and I won’t share your contact information with anyone else.</p>
+            </div>
+            <div class="booking_intro_quote">
+                <figure>
+                    <blockquote cite="https://quotefancy.com/photography-quotes">
+                    <p>"What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.”</p>
+                        <figcaption>-Karl Lagerfeld, <cite>quotefancy</cite></figcaption>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+        <!-- FORM -->
+        <div class="booking_form">
+            <form class="booking_form_flex">
+                <div class="form_child">
+                    <label for="name">NAME(S)</label>
+                    <input class="form_input" type="text" name="contact_name" id="name" placeholder="YOUR NAME HERE" required>
+                </div>
+                <div class="form_child">
+                    <label for="email">E-MAIL</label>
+                    <input class="form_input" type="email" name="contact_email" id="email" placeholder="YOUR EMAIL HERE" required>
+                </div>
+                <div class="form_child">
+                    <label for="contact">HOW WOULD YOU PREFER TO BE CONTACTED?</label>
+                    <select class="form_input" name="contact_list" id="contact" required>
+                        <option value="" disabled selected>SELECT AN OPTION</option>
+                        <option value="text">Text</option>
+                        <option value="call_me">Call Me</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                <div class="form_child">
+                    <label for="number">BEST NUMBER TO REACH YOU: I'LL ONLY TEXT OR CALL IF YOU TELL ME TO!</label>
+                    <input class="form_input" type="number" name="contact_number" id="number" placeholder="YOUR NUMBER HERE" required>
+                </div>
+                <div class="form_child">
+                    <label for="instagram">YOUR INSTAGRAM HANDLE/USERNAME. LET'S BE FRIENDS! :)</label>
+                    <input class="form_input" type="text" name="contact_instagram" id="instagram" placeholder="@" required>
+                </div>
+                <div class="form_child">
+                    <label for="capture">WHAT CAN I CAPTURE FOR YOU?</label>
+                    <select class="form_input" name="contact_capture" id="capture" required>
+                        <option value="" disabled selected>SELECT AN OPTION</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="elopemnt">Elopement</option>
+                        <option value="engangement_session">Engangement Session</option>
+                        <option value="bridal_session">Bridal Session</option>
+                        <option value="couples_session">Couples Session</option>
+                        <option value="portraits">Portraits</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form_child">
+                    <label for="date">EVENT DATE. WHEN IS THIS HAPPENING?</label>
+                    <input class="form_input" type="date" name="contact_date" id="date" required>
+                </div>
+                <div class="form_child">
+                    <label for="location">EVENT DATE. WHEN IS THIS HAPPENING?</label>
+                    <input class="form_input" type="text" name="contact_location" id="location" placeholder="FOR ELOPMENTS AND ENGAGEMENTS, LET ME KNOW IF YOU'LL NEED HELP FINDING A LOCATION!" required>
+                </div>
+                <div class="form_child">
+                    <label for="budget">ESTIMATED PHOTOGRAPHY BUDGET</label>
+                    <input class="form_input" type="text" name="contact_budget" id="budget" placeholder="$3000" required>
+                </div>
+                <div class="form_child">
+                    <label for="tell_more">TELL ME MORE ABOUT YOU TWO! HOW DID YOU MEET? HOW DO YOU ENVISION YOUR DAY TO BE LIKE? WHAT DO YOU WANT YOUR IMAGES TO REFLECT THE MOST ABOUT YOUR RELATIONSHIP AND LOVE STORY?</label>
+                    <textarea class="form_input" name="contact_tell_more" id="tell_more" placeholder="TYPE HERE" required></textarea>
+                </div>
+                <div class="form_child">
+                    <label for="find">HOW DID YOU FIND ME?</label>
+                    <select class="form_input" name="contact_find" id="find" required>
+                        <option value="" disabled selected>SELECT AN OPTION</option>
+                        <option value="client_referral">Client Referral</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="google">Google</option>
+                        <option value="form_find_   other">Other</option>
+                    </select>
+                </div>
+                <div class="form_child">
+                    <label for="additional">ANY ADDITIONAL MESSAGES FOR ME?</label>
+                    <input class="form_input" type="text" name="contact_additional" id="additional" placeholder="TYPE HERE" required>
+                </div>
+                    <input type="submit" value="Send Message">
+                
+            </form>
+        </div>
+        <!-- /FORM -->
+
+    </div>
+    </main>
+
+    <footer class="main-footer">
+        <span>&copy; 2021. All images copyright of Quintero Photography Co.</span>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

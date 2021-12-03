@@ -1,0 +1,481 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(231, 231, 231);
+}
+
+
+/*------ HEADER ------*/
+.topnav {
+    background-color: rgb(51, 51, 51);
+    overflow: hidden;
+    padding: 4px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.nav_links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.nav_links a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.topnav a:hover {
+    background-color: rgb(230, 223, 220);
+    border-radius: 5px;
+    color: black;
+}
+
+.header_image {
+    display: block;
+    margin: 5rem auto 6rem auto;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: 50% 60%;
+    border-radius: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.about_header_image {
+    display: block;
+    margin: 0 auto 6rem auto;
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    object-position: 50% 60%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.packages_intro {
+    background-image: url(img/package_1.JPG);
+    background-size: cover;
+    background-position: 50% 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 35rem;
+}
+
+.packages_intro_textbox {
+    background-color:rgb(228, 222, 220);
+    width: 20rem;
+    height: 25rem;
+    margin-left: 50%;
+}
+
+.packages_intro_textbox p {
+    margin: 1rem;
+    font-size: 1.15rem;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: .9px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.packages_intro_textbox p:first-child {
+    font-family: 'Great Vibes', cursive;
+    margin: 1.5rem 1rem 2rem 1rem;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: rgb(114, 114, 114);
+}
+
+#h-heading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    letter-spacing: 18px;
+    text-align: center;
+    margin-bottom: .7rem;
+    text-shadow: 1px 1px 2px rgb(41, 41, 41);
+}
+
+#h-subheading {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: .7rem;
+    margin-bottom: 8rem;
+    text-shadow: .5px .5px 1px rgb(41, 41, 41);
+}
+
+
+/*------ MAIN CONTENT ------*/
+.main {
+    margin-bottom: 10rem;
+}
+
+.container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+}
+
+.container img {
+    width: 25rem;
+    margin: .5rem 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+/*  */
+.packages_container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    width: 100%;
+}
+
+.p_c_1 {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(img/yeomens_3.jpeg);  
+    color: white;
+    width: 20rem;
+    height: 35rem;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    margin: 6rem 2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 3.5;
+    padding: 1rem;
+}
+
+.p_c_1 div p:first-child {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.75rem;
+    margin: -1rem;
+}
+
+.p_c_2 {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(img/valeria_3.jpeg);
+    color: white;
+    width: 20rem;
+    height: 35rem;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    margin: 6rem 2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 3.5;
+    padding: 1rem;
+}
+
+.p_c_2 div p:first-child {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.75rem;
+    margin: -1rem;
+}
+
+.p_c_3 {
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url(img/smith_2.jpeg);
+    color: white;
+    width: 20rem;
+    height: 35rem;
+    background-size: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    margin: 6rem 2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 3.5;
+    padding: 1rem;
+}
+
+.p_c_3 div p:first-child {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.75rem;
+    margin: -1rem;
+}
+
+/*  */
+#ig_invite {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#ig_invite p:last-child{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 10rem;
+}
+
+.assistance_title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
+    background-color: rgb(189, 169, 140);
+}
+
+.assistance {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content:space-between;
+    width: 100%;
+    height: auto;
+    background-color: rgb(189, 169, 140);
+    font-size: 1.15rem;
+    color: rgb(32, 32, 32);
+    padding-top: 1rem;
+}
+
+.assistance p{
+    font-size: 1rem;
+    flex-basis: 30rem;
+    width: 5rem;
+    height: auto;
+    margin: 1.25rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 1px;
+}
+
+
+/*------ About Me ------*/
+
+.about_me {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10rem 10px 5rem 10px;
+}
+
+/* Child Elements in .about_me */
+.about_me p {
+    width: 400px;
+    height: 600px;
+    padding: 1rem 1rem;
+    margin: 3rem 45px;
+}
+
+.about_me #about_img {
+    width: 25rem;
+    margin: 3rem 45px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+/* /Child Elements in .about_me */
+
+/*------ Booking Intro/Contact ------*/
+.booking_intro {
+    display: block;
+    margin: 0 auto 4rem auto;
+    padding: 2rem 6rem 6rem 6rem;
+}
+
+.booking_intro_text {
+    text-align: center;    
+}
+
+.booking_intro .item-1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color:rgb(192, 164, 127);
+    text-shadow: 1px .5px .1px black;
+    padding-bottom: 2rem;
+}
+
+.booking_intro .item-2 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.75;
+    padding-bottom: 3rem;
+}
+
+.booking_intro_quote {
+    text-align: center;
+    font-family: 'Great Vibes';
+    font-style: italic;
+    font-size: 2rem
+}
+
+.booking_intro_quote figcaption {
+    text-align: start;
+    font-size: 1.75rem;
+    color: rgb(73, 73, 73);
+    margin-top: -1.5rem;
+}
+
+/*------ /Booking Intro/Contact ------*/
+
+/*------ Booking Form ------*/
+.booking_form {
+    font-family: 'Great Vibes';
+    text-align: center;
+    font-size: 1rem;
+    background-color: white;
+    padding: 1rem 0 2rem 0;
+}
+
+.booking_form_flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_child {
+    display: block;
+    padding: 2rem 15%;
+}
+
+.form_child label {
+    display: block;
+    text-align: start;
+    padding-bottom: 1rem;
+}
+
+.form_input {
+    outline: none;
+    border-style: hidden;
+    border-bottom-style: solid;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+
+input[type=submit] {
+    align-self: center;
+    font-family: 'Great Vibes';
+    padding: 5px 15px; 
+    background: black; 
+    color: white;
+    font-weight: 700;
+    border: 0 none;
+    cursor: pointer;
+    border-radius: .8rem; 
+    margin-top: -1rem;
+    width: 8rem;
+    height: 3rem;
+}
+
+/*------ /Booking Form ------*/
+
+/*------ Footer ------*/
+.main-footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    padding: .2rem .2rem;
+    margin-top: 10rem;
+    background:rgb(240, 240, 240);
+    text-align: center;
+}
+
+
+/*------ MEDIA QUERIES ------*/
+
+@media screen and (max-width: 767px) {
+
+    .topnav {
+        background-color: rgb(51, 51, 51);
+        overflow: hidden;
+        padding: 30.5px;
+        box-shadow: 0px 0px 5px 0px gray;
+    }
+
+    .topnav a:hover {
+        background-color: rgb(230, 223, 220);
+        border-radius: 0;
+        color: black;
+    }
+
+    .hamburger {       
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .hamburger a {
+        color: #f2f2f2;
+        padding: 20px 16px 10px 16px;   
+        text-decoration: none;
+        font-size: 39px;
+        text-transform: uppercase;
+    }
+
+    .nav_links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav_links a {
+        margin: 0 10rem;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+
+    .packages_intro_textbox {
+        border: 1px solid black;
+        background-color:rgb(228, 222, 220);
+        width: 20rem;
+        height: 25rem;
+        margin-left: 0%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hamburger {
+        display: none;
+        flex: none;
+    }
+
+    .packages_intro_textbox {
+        border: 1px solid black;
+        background-color:rgb(228, 222, 220);
+        width: 20rem;
+        height: 25rem;
+        margin-left: 50%;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    }
+}
+
