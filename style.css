@@ -332,6 +332,8 @@ body {
 /* Child Elements in .about_me */
 
 .about_me p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     padding: 0 10rem;
     line-height: 2.5;
 }
@@ -377,13 +379,16 @@ body {
     text-align: center;
     font-family: 'Great Vibes';
     font-style: italic;
-    font-size: 4rem;
-    padding: 0 15rem;
+    padding: 0;
+}
+
+.booking_intro_quote p {
+    font-size: 2rem;
 }
 
 .booking_intro_quote figcaption {
     text-align: end;
-    font-size: 2.5rem
+    font-size: 2rem;
 }
 
 /*------ /Booking Intro/Contact ------*/
@@ -563,7 +568,7 @@ input[type=submit] {
     
     .about_header_image p {
         font-family: 'Great Vibes', cursive;
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: 600;
         letter-spacing: 2px;
         line-height: 2.5;
@@ -634,27 +639,19 @@ input[type=submit] {
         line-height: 1.75;
         padding-bottom: 3rem;
     }
-
-    .booking_intro_quote {
-        color: whitesmoke;
-        text-shadow: 1px .5px 5px rgb(0, 0, 0);
-        text-align: center;
-        font-family: 'Great Vibes';
-        font-style: italic;
-        padding: 0;
-    }
-
-    .booking_intro_quote p {
-        font-size: 1.8rem;
-    }
-    
-    .booking_intro_quote figcaption {
-        text-align: end;
-        font-size: 1.8rem
-    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 599px) {
+    #h-heading {
+        font-family: 'Great Vibes', cursive;
+        font-size: 2rem;
+        letter-spacing: 10px;
+        text-align: center;
+        margin-bottom: .7rem;
+        text-shadow: 1px 1px 2px rgb(41, 41, 41);
+        padding: 0 5rem;
+    }
+
     .topnav {
         background-color: rgb(51, 51, 51);
         overflow: hidden;
@@ -702,6 +699,27 @@ input[type=submit] {
         margin-top: 39px;
     }
 
+    .about_header_image p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 2.5;
+        color:rgb(255, 246, 234);
+        text-shadow: 1px .5px 5px rgb(0, 0, 0);
+        margin: auto;
+        padding: 10vh 1rem;
+        text-align: center;
+    }
+
+    .about_me {
+        padding: 0;
+    }
+
+    .about_me p {
+        padding: 3rem;
+    }
+
     .packages_intro_textbox {
         border: 1px solid black;
         background-color:rgb(228, 222, 220);
@@ -713,6 +731,9 @@ input[type=submit] {
 }
 
 @media screen and (min-width: 600px) and (max-width: 767px) {
+    #h-heading {
+        padding: 0 5rem;
+    }
 
     .topnav {
         background-color: rgb(51, 51, 51);
@@ -761,6 +782,27 @@ input[type=submit] {
         margin-top: 39px;
     }
 
+    .about_header_image p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 2.5;
+        color:rgb(255, 246, 234);
+        text-shadow: 1px .5px 5px rgb(0, 0, 0);
+        margin: auto;
+        padding: 10vh 1rem;
+        text-align: center;
+    }
+
+    .about_me {
+        padding: 0;
+    }
+
+    .about_me p {
+        padding: 2rem;
+    }
+
     .packages_intro_textbox {
         border: 1px solid black;
         background-color:rgb(228, 222, 220);
@@ -772,7 +814,11 @@ input[type=submit] {
 }
 
 
+
 @media screen and (min-width: 768px) {
+    #h-heading {
+        padding: 0 5rem;
+    }
 
     .hamburger {
         display: none;
@@ -787,5 +833,37 @@ input[type=submit] {
         margin-left: 50%;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     }
+
+    .about_me p {
+        padding: 1rem;
+    }
 }
 
+@media screen and (min-width: 768px) and (max-width: 893px){
+    .about_header_image p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 2.5;
+        color:rgb(255, 246, 234);
+        text-shadow: 1px .5px 5px rgb(0, 0, 0);
+        margin: auto;
+        padding: 10vh 1rem;
+        text-align: center;
+    }
+
+    .about_me {
+        padding: 0;
+    }
+
+    .about_me p {
+        padding: 5rem;
+    }
+}
+
+@media screen and (min-width: 894px) and (max-width: 893px) {
+    .about_me {
+        padding: 0;
+    }
+}
